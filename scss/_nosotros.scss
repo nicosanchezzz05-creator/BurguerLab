@@ -1,0 +1,180 @@
+@use "variables";
+@use "base";
+
+.contenedor-principal-nosotros{
+	@include base.fondo;
+}
+
+.intro-nosotros{
+	@include base.intro;
+}
+
+.banner-nosotros{
+	@include base.banner;
+}
+
+.footer-nosotros{
+	@include base.footer;
+}
+
+.body-nosotros{
+	@include base.whatsapp;
+}
+
+
+.carousel-nosotros{
+	max-width: 100%;
+	margin: 0 auto;
+	justify-self: center;
+	font-family: variables.$resaltados;
+	color: variables.$color-titulos;
+	
+
+	#carouselExample{
+		
+		overflow: hidden;
+
+		.carousel-inner {
+			width: 100%;
+			border-radius: 10px;
+			
+			height: auto;
+			aspect-ratio: 1/1;
+
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				object-position: center;
+			}
+		}
+	}
+}
+
+.map-burguer-lab {
+    font-family: variables.$resaltados;
+    color: variables.$color-titulos;
+    font-size: xx-large;
+    margin: 30px;
+    width: 100%;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+
+    .mapouter, .gmap_canvas, .gmap_iframe{
+        width: 100% !important;
+		max-width: auto;
+        max-height: 500px !important;
+		max-width: 500px;
+        aspect-ratio: 1/1;
+        border-radius: 10px;
+    }
+}
+
+.body-nosotros {
+	display: grid;
+	grid-template-columns: 10% 1fr 1fr 10%;
+	grid-template-rows: auto;
+	grid-template-areas:
+		"nav nav nav nav"
+		"contenedor-principal-nosotros contenedor-principal-nosotros contenedor-principal-nosotros contenedor-principal-nosotros"
+		"footer-nosotros footer-nosotros footer-nosotros footer-nosotros";
+	min-height: 100vh;
+}
+
+nav {
+	grid-area: nav;
+}
+
+.contenedor-principal-nosotros{
+	grid-area: contenedor-principal-nosotros;
+	display: grid;
+	grid-template-columns: 10% 1fr 1fr 10%; /**repeat(4, 1fr)**/
+	grid-template-rows: auto;
+	align-items: start;
+	grid-template-areas:
+		". intro-nosotros intro-nosotros ."
+		". map-burguer-lab carousel-nosotros ."
+		". banner-nosotros banner-nosotros .";
+
+	.intro-nosotros{
+		grid-area: intro-nosotros;
+	}
+
+	.map-burguer-lab{
+		grid-area: map-burguer-lab;
+		align-self: center;
+		justify-self: center;
+		max-width: 500px;
+	}
+
+	.carousel-nosotros{
+		grid-area: carousel-nosotros;
+		align-self: center;
+		justify-self: center;
+		max-width: 500px;
+		width: 100%;
+	}
+
+	.banner-nosotros{
+		grid-area: banner-nosotros;
+	}
+}
+
+.footer-nosotros{
+	grid-area: footer-nosotros;
+}
+
+@media (max-width: 600px){
+	.body-nosotros{
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: auto;
+		width: 100%;
+		max-width: 100%;
+		grid-template-areas:
+		"nav"
+		"contenedor-principal-nosotros"
+		"footer-nosotros";
+		min-height: 100vh;
+	}
+
+	nav{
+		grid-area: nav;
+		padding: 0 15px;
+	}
+
+	.contenedor-principal-nosotros{
+		grid-area: contenedor-principal-nosotros;
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: auto;
+		padding: 0 15px;
+		grid-template-areas: 
+		"intro-nosotros"
+		"carousel-nosotros"
+		"map-burguer-lab"
+		"banner-nosotros";
+
+		.intro-nosotros{
+			grid-area: intro-nosotros;
+		}
+
+		.carousel-nosotros{
+			grid-area: carousel-nosotros;
+		}
+
+		.map-burguer-lab{
+			grid-area: map-burguer-lab;
+		}
+
+		.banner-nosotros{
+			grid-area: banner-nosotros;
+		}
+	}
+
+	.footer-nosotros{
+		grid-area: footer-nosotros;
+	}
+}
+

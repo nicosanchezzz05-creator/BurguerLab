@@ -1,0 +1,147 @@
+@use "variables";
+@use "base";
+
+.contenedor-principal-menulab{
+	@include base.fondo;
+}
+
+.intro-menu-burguers{
+	@include base.intro;
+	text-align: center;
+}
+
+.intro-menu-bebidas, .bebidas-card, .card-body{
+	@include base.intro;
+	text-align: center;
+}
+
+.footer-menu{
+	@include base.footer;
+}
+
+.body-menu{
+	@include base.whatsapp;
+}
+
+.contenedor-principal-menulab{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 30px 10px;
+	width: 100%;
+
+	.burguer-card{
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 30px;
+		padding-top: 10px;
+		width: 100%;
+		max-width: 1200px;
+		justify-items: center; // Centra las tarjetas dentro de su celda de grid
+	}
+
+	.list-group{
+		font-size: small;
+		
+	}
+
+	.card-text{
+		font-size: small;
+	}
+
+	.card-link{
+		font-family: variables.$textos;
+	}
+
+	
+
+	@media (max-width: 930px){
+	.burguer-card{
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 10px;
+		padding: 30px 20px;
+		width: 100%;
+		justify-items: center;
+		overflow-x: hidden;
+		}
+	}
+
+
+	@media (max-width: 730px){
+	.burguer-card{
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 10px;
+		padding: 20px 20px;
+		width: 100%;
+		justify-items: center; // Centra las tarjetas dentro de su celda de grid
+		overflow-x: hidden;
+		}
+	.card{
+		width: 90%;
+		max-width: 320px;
+	}
+	}
+}
+
+.card{
+	background-color: black;
+	border-radius: 10px;
+	width: 100% ;
+	max-width: 100%;
+	box-sizing: border-box;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	&hover{
+		transform: translateY(-8px);
+		box-shadow: 0px 0px 15px variables.$color-titulos;
+		transition: 0.5s;
+	}
+	
+
+
+	.card-body{
+		text-align: center;
+	}
+
+	.list-group-item{
+		background-color: rgb(182, 181, 150);
+		border-color: black;
+	}
+
+	.card-link{
+		display: inline-block;
+		color: white;
+		text-decoration: none;
+		font-size: small;
+		border: 1px solid rgb(0, 0, 0);
+		border-color: variables.$color-titulos;
+		border-radius: 20px;
+		padding: 5px 12px;
+		margin: 4px 2px;
+		text-align: center;
+		width: 100%;
+	}
+}
+
+.list-group-item{
+	font-family: variables.$textos;
+	border: 10px solid none;
+}
+
+.card:hover{
+	transform: translateY(-8px);
+	box-shadow: 0px 0px 15px variables.$color-titulos;
+	transition: 0.5s;
+}
+
+.card-bebidas {
+    margin-left: auto ;  /* Empuja la tarjeta para centrarla */
+    margin-right: auto ; /* Automáticamente equilibra los espacios laterales */
+    width: 100%;                   /* Asegura que sea responsiva */
+}
+
+
+
+

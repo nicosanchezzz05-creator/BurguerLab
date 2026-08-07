@@ -1,0 +1,22 @@
+@use "variables";
+
+.carousel-inner{
+    .carousel-item{
+		.imagen-optimizada{
+			display: block;
+			width: 100%;
+			border-radius: variables.$grosor-bordes !important;
+			border: 1px solid variables.$color-titulos;
+			overflow: hidden;
+		}
+
+        img{
+            display: block;
+			width: 100%;
+			height: auto;
+			object-fit: cover;
+        }
+    }
+}
+
+

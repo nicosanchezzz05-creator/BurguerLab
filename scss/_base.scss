@@ -1,0 +1,76 @@
+@use "variables";
+
+@mixin fondo{
+	background: #0D0D0D;
+	background: linear-gradient(0deg, rgba(13, 13, 13, 1) 0%, rgba(33, 33, 33, 1) 55%);
+}
+
+
+@mixin banner{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	padding-bottom: 30px;
+
+	.banner-img{
+		max-width: 800px;
+		width: 90%;
+		height: auto;
+		border-radius: 5px;
+		}	
+}
+
+@mixin intro{
+	font-family: variables.$resaltados;
+	color: variables.$color-titulos;
+	text-align: center;
+	font-size: xx-large;
+
+	p{
+		font-family: variables.$textos;
+		color: variables.$color-nav-parrafos;
+		font-size: medium;
+		text-align: center;
+		max-width: 50rem;
+		width: 100%;
+		margin-left: auto;
+        margin-right: auto;
+	}
+}
+
+@mixin contenedor-centrado {
+    width: 100%;
+    max-width: 1100px; // Ancho ideal para una web moderna y legible
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+@mixin footer {
+	background-color: black;
+	font-family: variables.$resaltados;
+	color: variables.$color-titulos;
+	text-align: center;
+}
+
+@mixin whatsapp{
+	.whatsapp {
+		position:fixed;
+		width:60px;
+		height:60px;
+		bottom:20px;
+		right:20px;
+		background-color:#25d366;
+		color:#FFF;
+		border-radius:50%;
+		text-align:center;
+		font-size:30px;
+		z-index:100;
+
+	}
+	.whatsapp-icon {
+		margin-top:15px;
+	}
+	
+}

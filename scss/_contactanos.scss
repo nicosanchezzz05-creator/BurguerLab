@@ -1,0 +1,92 @@
+@use "variables";
+@use "base";
+
+.contenedor-principal-contactanos{
+	@include base.fondo;
+}
+
+.intro-contactanos{
+	@include base.intro;
+}
+
+.footer-contactanos{
+	@include base.footer;
+}
+
+.body-contactanos{
+	@include base.whatsapp;
+}
+
+.formulario{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	padding: 20px;
+	color: whitesmoke;
+
+	.form-contacto{
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		max-width: 600px;
+		gap: 15px;
+
+		.form-campo{
+			display: flex;
+			flex-direction: column;
+			gap: 5px;
+
+			input, select, textarea{
+				padding: 10px;
+				border-radius: 15px;
+				border:  3px solid black;
+				background-color: rgb(187, 187, 159);
+
+
+				&:focus{
+					border-color: variables.$color-titulos;
+					outline: none;
+					transition: all 0.3s ease;
+					background-color: black;
+					color: whitesmoke;
+				}
+			}		
+		}
+		.btn-enviar {
+            position: relative; // 1. Necesario para posicionar el fondo animado adentro
+            overflow: hidden;   // 2. Oculta todo lo que se salga de los bordes redondeados del botón
+            
+            padding: 12px 20px;
+            background-color: black; // Color inicial del botón
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            z-index: 1; // Asegura que el texto esté siempre arriba del color que sube
+            transition: color 0.3s ease; // Para que el texto cambie de color suavemente si querés
+
+            // 3. Creamos el "bloque" de color que va a subir
+            &::before {
+                content: "";
+                position: absolute;
+                bottom: 0;      // Arranca pegado bien abajo
+                left: 0;
+                width: 100%;
+                height: 0%;     // Arranca con altura 0 (invisible)
+                background-color: variables.$color-titulos; // El color al que querés que cambie (ej: blanco)
+                transition: height 0.4s ease-in-out; // La velocidad y suavidad del efecto
+                z-index: -1;    // Se coloca detrás del texto del botón
+            }
+
+            // 4. Lo que pasa cuando ponés el mouse encima (:hover)
+            &:hover {
+                color: black; // Opcional: cambiás el color del texto para que contraste
+                
+                // Hacemos que el bloque de color de abajo ocupe todo el alto
+                &::before {
+                    height: 100%;
+                }
+            }
+		}
+	}
+}

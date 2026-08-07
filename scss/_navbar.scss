@@ -1,0 +1,44 @@
+@use "variables";
+
+.navbar{
+	background: #0D0D0D;
+	background: linear-gradient(180deg, rgba(13, 13, 13, 1) 0%, rgba(33, 33, 33, 1) 55%);
+
+	h1,.h2-animado{
+		font-family: variables.$resaltados;
+		color: variables.$color-titulos;
+		cursor: default;
+		user-select: none;
+
+	}
+
+	h1,.h2-animado:hover{
+		animation: tada 0.5s ease-in-out;
+	}
+
+	.nav-link{
+		font-family: variables.$textos;
+		font-size: medium;
+		color: variables.$color-nav-parrafos;
+
+		display: inline-block;
+		transition: all 0.3s ease-in-out;
+		cursor: pointer
+		
+	}
+
+	.nav-link:hover{
+		color: #F2B705;
+		transform: scale(1.15) rotate(2deg);
+	}
+
+	.navbar-toggler{
+		background-color: variables.$color-titulos;
+		border-radius: 22px;}
+}
+
+@media(min-width:992px){
+	#navbarNav{
+		justify-content: right;
+	}
+}
