@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+SC:ital,wght@0,100..900;1,100..900&family=Bebas+Neue&family=Black+Ops+One&family=Bungee&family=Grenze+Gotisch:wght@100..900&family=Gruppo&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Quicksand:wght@300..700&family=Rubik+Mono+One&family=Yuyu&display=swap" rel="stylesheet">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+		<link rel="stylesheet" href="../../css/main.css">
+		<title>Burguer Lab</title>
+	</head>
+	<body class="body-contactanos">
+		<nav class="navbar navbar-expand-lg bg-body-tertiary">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="../../index.html">
+					<img src="../../assets/logo/BL-ico.webp" alt="Logo Burguer Lab" width="80" height=auto/>
+				</a>
+				<h1 class="h2-animado">Contactanos</h2>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link" href="../../index.html">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="../menu-lab/menu-lab.html">Menú Lab</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="../nosotros/nosotros.html">Nosotros</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="../postulate/calendario.html">Calendario Lab</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<main class="contenedor-principal-contactanos">
+			<section class="intro-contactanos">
+				<h2>¡Llevamos el laboratorio a tu evento!</h2>
+				<p>El verdadero sabor de laboratorio ahora en tu evento. Completá el formulario de acá abajo, elegí tu experiencia y preparate para disfrutar del mejor catering de hamburguesas sin moverte de casa.</p>
+				<p>¡Solicita tu presupuesto sin cargo!</p>
+			</section>
+
+			<section class="formulario">
+				<form class="form-contacto">
+					<div class="form-campo">
+						<label for="name" class="form-campo">Nombre</label>
+						<input type="text" id="name" name="name" placeholder="Ingresa tu nombre" required>
+					</div>
+					<div class="form-campo">
+						<label for="email" class="form-campo">E-mail</label>
+						<input type="email" id="email" name="email" placeholder="email@hotmail.com" required>
+					</div>
+					<div class="form-campo">
+						<label for="tel" class="form-campo">Teléfono</label>
+						<input type="tel" id="tel" name="tel" placeholder="Ingresar sin 0 ni 15" required>
+					</div>
+					<div class="form-campo">
+						<label for="date" class="form-campo">Fecha</label>
+						<input type="date" id="date" name="date" required>
+					</div>
+					<div class="form-campo">
+						<label for="cantidad" class="form-campo">Cantidad de integrantes</label>
+						<input type="number" id="number" name="number" required>
+					</div>
+					<div class="form-campo">
+						<label for="tipo-evento" class="form-campo">Tipo de evento</label>
+						<select id="tipo-evento" name="tipo-evento" required>
+							<option value="" disabled selected>Seleccioná una opción</option>
+							<option value="Cumpleaños">Cumpleaños</option>
+							<option value="Casamiento">Casamiento</option>
+							<option value="Reunion familiar/amigos">Reunion familiar/amigos</option>
+							<option value="Despedidas">Despedidas</option>
+						</select>
+					</div>
+					<div class="form-campo">
+						<label for="text" class="form-campo">Escribinos</label>
+						<textarea id="text" name="text" placeholder="Te responderemos en la brevedad"></textarea>
+					</div>
+					<button class="btn-enviar" type="submit">Solicitar presupuesto sin cargo</button>
+				</form>
+			</section>
+
+			<a href="https://wa.me/5211234567890?text=Me%20gustaría%20saber%20el%20precio%20del%20coche" class="whatsapp" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
+
+		</main>
+
+		<footer class="footer-contactanos">BURGUER LAB - Todos los derechos reservados ©</footer>
+
+		<a href="https://wa.me/5211234567890?text=Me%20gustaría%20saber%20el%20precio%20del%20coche" class="whatsapp" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+			crossorigin="anonymous"></script>
+	</body>
+</html>
