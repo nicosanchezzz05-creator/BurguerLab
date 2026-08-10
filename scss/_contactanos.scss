@@ -53,36 +53,33 @@
 			}		
 		}
 		.btn-enviar {
-            position: relative; // 1. Necesario para posicionar el fondo animado adentro
-            overflow: hidden;   // 2. Oculta todo lo que se salga de los bordes redondeados del botón
+            position: relative;
+            overflow: hidden;
             
             padding: 12px 20px;
-            background-color: black; // Color inicial del botón
+            background-color: black;
             color: #ffffff;
             border: none;
             border-radius: 5px;
             cursor: pointer;
-            z-index: 1; // Asegura que el texto esté siempre arriba del color que sube
-            transition: color 0.3s ease; // Para que el texto cambie de color suavemente si querés
+            z-index: 1;
+            transition: color 0.3s ease;
 
-            // 3. Creamos el "bloque" de color que va a subir
             &::before {
                 content: "";
                 position: absolute;
-                bottom: 0;      // Arranca pegado bien abajo
+                bottom: 0;
                 left: 0;
                 width: 100%;
-                height: 0%;     // Arranca con altura 0 (invisible)
-                background-color: variables.$color-titulos; // El color al que querés que cambie (ej: blanco)
-                transition: height 0.4s ease-in-out; // La velocidad y suavidad del efecto
-                z-index: -1;    // Se coloca detrás del texto del botón
+                height: 0%;
+                background-color: variables.$color-titulos;
+                transition: height 0.4s ease-in-out;
+                z-index: -1;
             }
 
-            // 4. Lo que pasa cuando ponés el mouse encima (:hover)
             &:hover {
-                color: black; // Opcional: cambiás el color del texto para que contraste
+                color: black;
                 
-                // Hacemos que el bloque de color de abajo ocupe todo el alto
                 &::before {
                     height: 100%;
                 }

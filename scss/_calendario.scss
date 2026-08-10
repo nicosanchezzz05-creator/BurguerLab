@@ -6,7 +6,7 @@
 }
 
 .contenedor-principal-calendario{
-    flex: 1; // Esto hace que ocupe todo el espacio sobrante de la pantalla
+    flex: 1;
     @include base.fondo;
 }
 
@@ -21,15 +21,15 @@
 .body-calendario {
     display: flex;
     flex-direction: column;
-    min-height: 100vh; // Asegura que el alto mínimo sea la pantalla completa
+    min-height: 100vh;
 }
 
 .card-calendario {
 	background-color: transparent;
 	border-color: transparent;
     display: grid;
-    grid-template-columns: repeat(2, 1fr); // Limita el ancho máximo de cada tarjeta
-    justify-content: center; // Centra las tarjetas en la pantalla
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
 	align-items: center;
     gap: 30px;
     padding: 40px 20px;
@@ -44,7 +44,6 @@
         height: 250px;
         perspective: 1000px;
 
-        // El hover se aplica directamente al contenedor principal de la tarjeta
         &:hover {
             .flip-card-inner {
                 transform: rotateY(180deg);
@@ -74,17 +73,17 @@
         }
 
         .flip-card-front {
-    		background-size: contain; /* Ajusta la imagen para que entre entera */
-    		background-repeat: no-repeat; /* Evita que la imagen se repita como mosaico */
-    		background-position: center; /* Centra la imagen en la tarjeta */
-    		background-color: #111; /* Color de fondo por si queda espacio libre */
+    		background-size: contain;
+    		background-repeat: no-repeat;
+    		background-position: center;
+    		background-color: #111;
             background-color: black;
             color: variables.$textos;
             border: 1px solid variables.$color-titulos;
         }
 
         .flip-card-back {
-            background-color: variables.$color-titulos; // Asegura que tome el color de tu variable
+            background-color: variables.$color-titulos;
             color: balck;
 			border-color: black;
             transform: rotateY(180deg);
@@ -102,7 +101,7 @@
 	.card-calendario{
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
-		justify-content: center; // Centra las tarjetas en la pantalla
+		justify-content: center;
 		gap: 15px;
 		padding: 20px 10px;
 		width: 100%;

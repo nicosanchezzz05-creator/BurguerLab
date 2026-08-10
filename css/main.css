@@ -1,789 +1,768 @@
-@charset "UTF-8";
 .navbar {
-	background: #0d0d0d;
-	background: linear-gradient(180deg, rgb(13, 13, 13) 0%, rgb(33, 33, 33) 55%);
+  background: #0D0D0D;
+  background: linear-gradient(180deg, rgb(13, 13, 13) 0%, rgb(33, 33, 33) 55%);
 }
-.navbar h1,
-.navbar .h2-animado {
-	font-family: "Alumni Sans SC";
-	color: #f2b705;
-	cursor: default;
-	user-select: none;
+.navbar h1, .navbar .h2-animado {
+  font-family: "Alumni Sans SC";
+  color: #F2B705;
+  cursor: default;
+  user-select: none;
 }
-.navbar h1,
-.navbar .h2-animado:hover {
-	animation: tada 0.5s ease-in-out;
+.navbar h1, .navbar .h2-animado:hover {
+  animation: tada 0.5s ease-in-out;
 }
 .navbar .nav-link {
-	font-family: "Quicksand";
-	font-size: medium;
-	color: #d3d2d0;
-	display: inline-block;
-	transition: all 0.3s ease-in-out;
-	cursor: pointer;
+  font-family: "Quicksand";
+  font-size: medium;
+  color: #d3d2d0;
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
 }
 .navbar .nav-link:hover {
-	color: #f2b705;
-	transform: scale(1.15) rotate(2deg);
+  color: #F2B705;
+  transform: scale(1.15) rotate(2deg);
 }
 .navbar .navbar-toggler {
-	background-color: #f2b705;
-	border-radius: 22px;
+  background-color: #F2B705;
+  border-radius: 22px;
 }
 
 @media (min-width: 992px) {
-	#navbarNav {
-		justify-content: right;
-	}
+  #navbarNav {
+    justify-content: right;
+  }
 }
 .carousel-inner .carousel-item .imagen-optimizada {
-	display: block;
-	width: 100%;
-	border-radius: 5px !important;
-	border: 1px solid #f2b705;
-	overflow: hidden;
+  display: block;
+  width: 100%;
+  border-radius: 5px !important;
+  border: 1px solid #F2B705;
+  overflow: hidden;
 }
 .carousel-inner .carousel-item img {
-	display: block;
-	width: 100%;
-	height: auto;
-	object-fit: cover;
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 .contenedor-principal-home {
-	background: #0d0d0d;
-	background: linear-gradient(0deg, rgb(13, 13, 13) 0%, rgb(33, 33, 33) 55%);
+  background: #0D0D0D;
+  background: linear-gradient(0deg, rgb(13, 13, 13) 0%, rgb(33, 33, 33) 55%);
 }
 
-.intro-home,
-.end-home {
-	font-family: "Alumni Sans SC";
-	color: #f2b705;
-	text-align: center;
-	font-size: xx-large;
+.intro-home, .end-home {
+  font-family: "Alumni Sans SC";
+  color: #F2B705;
+  text-align: center;
+  font-size: xx-large;
 }
-.intro-home p,
-.end-home p {
-	font-family: "Quicksand";
-	color: #d3d2d0;
-	font-size: medium;
-	text-align: center;
-	max-width: 50rem;
-	width: 100%;
-	margin-left: auto;
-	margin-right: auto;
+.intro-home p, .end-home p {
+  font-family: "Quicksand";
+  color: #d3d2d0;
+  font-size: medium;
+  text-align: center;
+  max-width: 50rem;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .banner {
-	display: flex;
-	justify-content: center;
-	width: 100%;
-	padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-bottom: 30px;
 }
 .banner .banner-img {
-	max-width: 800px;
-	width: 90%;
-	height: auto;
-	border-radius: 5px;
+  max-width: 800px;
+  width: 90%;
+  height: auto;
+  border-radius: 5px;
 }
 
 .body-home .whatsapp {
-	position: fixed;
-	width: 60px;
-	height: 60px;
-	bottom: 20px;
-	right: 20px;
-	background-color: #25d366;
-	color: #fff;
-	border-radius: 50%;
-	text-align: center;
-	font-size: 30px;
-	z-index: 100;
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 30px;
+  z-index: 100;
 }
 .body-home .whatsapp-icon {
-	margin-top: 15px;
+  margin-top: 15px;
 }
 
 .footer-home {
-	background-color: black;
-	font-family: "Alumni Sans SC";
-	color: #f2b705;
-	text-align: center;
+  background-color: black;
+  font-family: "Alumni Sans SC";
+  color: #F2B705;
+  text-align: center;
 }
 
 .menu-app {
-	display: flex;
-	padding: 5px;
-	margin: 10px;
-	justify-content: center;
-	font-size: x-small;
+  display: flex;
+  padding: 5px;
+  margin: 10px;
+  justify-content: center;
+  font-size: x-small;
 }
 .menu-app .boton-menu {
-	background-color: rgb(36, 35, 35);
-	border-radius: 5px;
-	border: 1px solid #f2b705;
-	margin-right: 10px;
-	animation: bounce 0.7s;
+  background-color: rgb(36, 35, 35);
+  border-radius: 5px;
+  border: 1px solid #F2B705;
+  margin-right: 10px;
+  animation: bounce 0.7s;
 }
 .menu-app a {
-	font-family: "Quicksand";
-	font-size: medium;
-	color: #d3d2d0;
-	text-decoration: none;
-	display: block;
+  font-family: "Quicksand";
+  font-size: medium;
+  color: #d3d2d0;
+  text-decoration: none;
+  display: block;
 }
 
-html,
-.body-home {
-	height: 100%;
-	margin: 0;
+html, .body-home {
+  height: 100%;
+  margin: 0;
 }
 
 .body-home {
-	display: grid;
-	grid-template-rows: auto 1fr auto;
-	grid-template-columns: 1fr;
-	grid-template-areas: "nav" "contenedor-principal-home" "footer-home";
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 1fr;
+  grid-template-areas: "nav" "contenedor-principal-home" "footer-home";
 }
 
 nav {
-	grid-area: nav;
+  grid-area: nav;
 }
 
 .contenedor-principal-home {
-	grid-area: contenedor-principal-home;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	gap: 15px;
-	width: 100%;
+  grid-area: contenedor-principal-home;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
 }
 
 .footer-home {
-	grid-area: footer-home;
+  grid-area: footer-home;
 }
 
 @media (min-width: 480px) {
-	body-homebody {
-		grid-template-columns: 1fr;
-	}
+  body-homebody {
+    grid-template-columns: 1fr;
+  }
 }
 .contenedor-principal-menulab {
-	background: #0d0d0d;
-	background: linear-gradient(0deg, rgb(13, 13, 13) 0%, rgb(33, 33, 33) 55%);
+  background: #0D0D0D;
+  background: linear-gradient(0deg, rgb(13, 13, 13) 0%, rgb(33, 33, 33) 55%);
 }
 
 .intro-menu-burguers {
-	font-family: "Alumni Sans SC";
-	color: #f2b705;
-	text-align: center;
-	font-size: xx-large;
+  font-family: "Alumni Sans SC";
+  color: #F2B705;
+  text-align: center;
+  font-size: xx-large;
 }
 .intro-menu-burguers p {
-	font-family: "Quicksand";
-	color: #d3d2d0;
-	font-size: medium;
-	text-align: center;
-	max-width: 50rem;
-	width: 100%;
-	margin-left: auto;
-	margin-right: auto;
+  font-family: "Quicksand";
+  color: #d3d2d0;
+  font-size: medium;
+  text-align: center;
+  max-width: 50rem;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .intro-menu-burguers {
-	text-align: center;
+  text-align: center;
 }
 
-.intro-menu-bebidas,
-.bebidas-card,
-.card-body {
-	font-family: "Alumni Sans SC";
-	color: #f2b705;
-	text-align: center;
-	font-size: xx-large;
+.intro-menu-bebidas, .bebidas-card, .card-body {
+  font-family: "Alumni Sans SC";
+  color: #F2B705;
+  text-align: center;
+  font-size: xx-large;
 }
-.intro-menu-bebidas p,
-.bebidas-card p,
-.card-body p {
-	font-family: "Quicksand";
-	color: #d3d2d0;
-	font-size: medium;
-	text-align: center;
-	max-width: 50rem;
-	width: 100%;
-	margin-left: auto;
-	margin-right: auto;
+.intro-menu-bebidas p, .bebidas-card p, .card-body p {
+  font-family: "Quicksand";
+  color: #d3d2d0;
+  font-size: medium;
+  text-align: center;
+  max-width: 50rem;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
-.intro-menu-bebidas,
-.bebidas-card,
-.card-body {
-	text-align: center;
+.intro-menu-bebidas, .bebidas-card, .card-body {
+  text-align: center;
 }
 
 .footer-menu {
-	background-color: black;
-	font-family: "Alumni Sans SC";
-	color: #f2b705;
-	text-align: center;
+  background-color: black;
+  font-family: "Alumni Sans SC";
+  color: #F2B705;
+  text-align: center;
 }
 
 .body-menu .whatsapp {
-	position: fixed;
-	width: 60px;
-	height: 60px;
-	bottom: 20px;
-	right: 20px;
-	background-color: #25d366;
-	color: #fff;
-	border-radius: 50%;
-	text-align: center;
-	font-size: 30px;
-	z-index: 100;
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 30px;
+  z-index: 100;
 }
 .body-menu .whatsapp-icon {
-	margin-top: 15px;
+  margin-top: 15px;
 }
 
 .contenedor-principal-menulab {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	padding: 30px 10px;
-	width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 10px;
+  width: 100%;
 }
 .contenedor-principal-menulab .burguer-card {
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	gap: 30px;
-	padding-top: 10px;
-	width: 100%;
-	max-width: 1200px;
-	justify-items: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  padding-top: 10px;
+  width: 100%;
+  max-width: 1200px;
+  justify-items: center;
 }
 .contenedor-principal-menulab .list-group {
-	font-size: small;
+  font-size: small;
 }
 .contenedor-principal-menulab .card-text {
-	font-size: small;
+  font-size: small;
 }
 .contenedor-principal-menulab .card-link {
-	font-family: "Quicksand";
+  font-family: "Quicksand";
 }
 @media (max-width: 930px) {
-	.contenedor-principal-menulab .burguer-card {
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		gap: 10px;
-		padding: 30px 20px;
-		width: 100%;
-		justify-items: center;
-		overflow-x: hidden;
-	}
+  .contenedor-principal-menulab .burguer-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 30px 20px;
+    width: 100%;
+    justify-items: center;
+    overflow-x: hidden;
+  }
 }
 @media (max-width: 730px) {
-	.contenedor-principal-menulab .burguer-card {
-		display: grid;
-		grid-template-columns: 1fr;
-		gap: 10px;
-		padding: 20px 20px;
-		width: 100%;
-		justify-items: center;
-		overflow-x: hidden;
-	}
-	.contenedor-principal-menulab .card {
-		width: 90%;
-		max-width: 320px;
-	}
+  .contenedor-principal-menulab .burguer-card {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 20px 20px;
+    width: 100%;
+    justify-items: center;
+    overflow-x: hidden;
+  }
+  .contenedor-principal-menulab .card {
+    width: 90%;
+    max-width: 320px;
+  }
 }
 
 .card {
-	background-color: black;
-	border-radius: 10px;
-	width: 100%;
-	max-width: 100%;
-	box-sizing: border-box;
-	transition:
-		transform 0.3s ease,
-		box-shadow 0.3s ease;
+  background-color: black;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .cardhover {
-	transform: translateY(-8px);
-	box-shadow: 0px 0px 15px #f2b705;
-	transition: 0.5s;
+  transform: translateY(-8px);
+  box-shadow: 0px 0px 15px #F2B705;
+  transition: 0.5s;
 }
 .card .card-body {
-	text-align: center;
+  text-align: center;
 }
 .card .list-group-item {
-	background-color: rgb(182, 181, 150);
-	border-color: black;
+  background-color: rgb(182, 181, 150);
+  border-color: black;
 }
 .card .card-link {
-	display: inline-block;
-	color: white;
-	text-decoration: none;
-	font-size: small;
-	border: 1px solid rgb(0, 0, 0);
-	border-color: #f2b705;
-	border-radius: 20px;
-	padding: 5px 12px;
-	margin: 4px 2px;
-	text-align: center;
-	width: 100%;
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  font-size: small;
+  border: 1px solid rgb(0, 0, 0);
+  border-color: #F2B705;
+  border-radius: 20px;
+  padding: 5px 12px;
+  margin: 4px 2px;
+  text-align: center;
+  width: 100%;
 }
 
 .list-group-item {
-	font-family: "Quicksand";
-	border: 10px solid none;
+  font-family: "Quicksand";
+  border: 10px solid none;
 }
 
 .card:hover {
-	transform: translateY(-8px);
-	box-shadow: 0px 0px 15px #f2b705;
-	transition: 0.5s;
+  transform: translateY(-8px);
+  box-shadow: 0px 0px 15px #F2B705;
+  transition: 0.5s;
 }
 
 .card-bebidas {
-	margin-left: auto; /* Empuja la tarjeta para centrarla */
-	margin-right: auto; /* Automáticamente equilibra los espacios laterales */
-	width: 100%; /* Asegura que sea responsiva */
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }
 
 .contenedor-principal-nosotros {
-	background: #0d0d0d;
-	background: linear-gradient(0deg, rgb(13, 13, 13) 0%, rgb(33, 33, 33) 55%);
+  background: #0D0D0D;
+  background: linear-gradient(0deg, rgb(13, 13, 13) 0%, rgb(33, 33, 33) 55%);
 }
 
 .intro-nosotros {
-	font-family: "Alumni Sans SC";
-	color: #f2b705;
-	text-align: center;
-	font-size: xx-large;
+  font-family: "Alumni Sans SC";
+  color: #F2B705;
+  text-align: center;
+  font-size: xx-large;
 }
 .intro-nosotros p {
-	font-family: "Quicksand";
-	color: #d3d2d0;
-	font-size: medium;
-	text-align: center;
-	max-width: 50rem;
-	width: 100%;
-	margin-left: auto;
-	margin-right: auto;
+  font-family: "Quicksand";
+  color: #d3d2d0;
+  font-size: medium;
+  text-align: center;
+  max-width: 50rem;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .banner-nosotros {
-	display: flex;
-	justify-content: center;
-	width: 100%;
-	padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-bottom: 30px;
 }
 .banner-nosotros .banner-img {
-	max-width: 800px;
-	width: 90%;
-	height: auto;
-	border-radius: 5px;
+  max-width: 800px;
+  width: 90%;
+  height: auto;
+  border-radius: 5px;
 }
 
 .footer-nosotros {
-	background-color: black;
-	font-family: "Alumni Sans SC";
-	color: #f2b705;
-	text-align: center;
+  background-color: black;
+  font-family: "Alumni Sans SC";
+  color: #F2B705;
+  text-align: center;
 }
 
 .body-nosotros .whatsapp {
-	position: fixed;
-	width: 60px;
-	height: 60px;
-	bottom: 20px;
-	right: 20px;
-	background-color: #25d366;
-	color: #fff;
-	border-radius: 50%;
-	text-align: center;
-	font-size: 30px;
-	z-index: 100;
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 30px;
+  z-index: 100;
 }
 .body-nosotros .whatsapp-icon {
-	margin-top: 15px;
+  margin-top: 15px;
 }
 
 .carousel-nosotros {
-	max-width: 100%;
-	margin: 0 auto;
-	justify-self: center;
-	font-family: "Alumni Sans SC";
-	color: #f2b705;
+  max-width: 100%;
+  margin: 0 auto;
+  justify-self: center;
+  font-family: "Alumni Sans SC";
+  color: #F2B705;
 }
 .carousel-nosotros #carouselExample {
-	overflow: hidden;
+  overflow: hidden;
 }
 .carousel-nosotros #carouselExample .carousel-inner {
-	width: 100%;
-	border-radius: 10px;
-	height: auto;
-	aspect-ratio: 1/1;
+  width: 100%;
+  border-radius: 10px;
+  height: auto;
+  aspect-ratio: 1/1;
 }
 .carousel-nosotros #carouselExample .carousel-inner img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	object-position: center;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .map-burguer-lab {
-	font-family: "Alumni Sans SC";
-	color: #f2b705;
-	font-size: xx-large;
-	margin: 30px;
-	width: 100%;
-	justify-self: center;
-	display: flex;
-	flex-direction: column;
+  font-family: "Alumni Sans SC";
+  color: #F2B705;
+  font-size: xx-large;
+  margin: 30px;
+  width: 100%;
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
 }
-.map-burguer-lab .mapouter,
-.map-burguer-lab .gmap_canvas,
-.map-burguer-lab .gmap_iframe {
-	width: 100% !important;
-	max-width: auto;
-	max-height: 500px !important;
-	max-width: 500px;
-	aspect-ratio: 1/1;
-	border-radius: 10px;
+.map-burguer-lab .mapouter, .map-burguer-lab .gmap_canvas, .map-burguer-lab .gmap_iframe {
+  width: 100% !important;
+  max-width: auto;
+  max-height: 500px !important;
+  max-width: 500px;
+  aspect-ratio: 1/1;
+  border-radius: 10px;
 }
 
 .body-nosotros {
-	display: grid;
-	grid-template-columns: 10% 1fr 1fr 10%;
-	grid-template-rows: auto;
-	grid-template-areas: "nav nav nav nav" "contenedor-principal-nosotros contenedor-principal-nosotros contenedor-principal-nosotros contenedor-principal-nosotros" "footer-nosotros footer-nosotros footer-nosotros footer-nosotros";
-	min-height: 100vh;
+  display: grid;
+  grid-template-columns: 10% 1fr 1fr 10%;
+  grid-template-rows: auto;
+  grid-template-areas: "nav nav nav nav" "contenedor-principal-nosotros contenedor-principal-nosotros contenedor-principal-nosotros contenedor-principal-nosotros" "footer-nosotros footer-nosotros footer-nosotros footer-nosotros";
+  min-height: 100vh;
 }
 
 nav {
-	grid-area: nav;
+  grid-area: nav;
 }
 
 .contenedor-principal-nosotros {
-	grid-area: contenedor-principal-nosotros;
-	display: grid;
-	grid-template-columns: 10% 1fr 1fr 10%; /**repeat(4, 1fr)**/
-	grid-template-rows: auto;
-	align-items: start;
-	grid-template-areas: ". intro-nosotros intro-nosotros ." ". map-burguer-lab carousel-nosotros ." ". banner-nosotros banner-nosotros .";
+  grid-area: contenedor-principal-nosotros;
+  display: grid;
+  grid-template-columns: 10% 1fr 1fr 10%; /**repeat(4, 1fr)**/
+  grid-template-rows: auto;
+  align-items: start;
+  grid-template-areas: ". intro-nosotros intro-nosotros ." ". map-burguer-lab carousel-nosotros ." ". banner-nosotros banner-nosotros .";
 }
 .contenedor-principal-nosotros .intro-nosotros {
-	grid-area: intro-nosotros;
+  grid-area: intro-nosotros;
 }
 .contenedor-principal-nosotros .map-burguer-lab {
-	grid-area: map-burguer-lab;
-	align-self: center;
-	justify-self: center;
-	max-width: 500px;
+  grid-area: map-burguer-lab;
+  align-self: center;
+  justify-self: center;
+  max-width: 500px;
 }
 .contenedor-principal-nosotros .carousel-nosotros {
-	grid-area: carousel-nosotros;
-	align-self: center;
-	justify-self: center;
-	max-width: 500px;
-	width: 100%;
+  grid-area: carousel-nosotros;
+  align-self: center;
+  justify-self: center;
+  max-width: 500px;
+  width: 100%;
 }
 .contenedor-principal-nosotros .banner-nosotros {
-	grid-area: banner-nosotros;
+  grid-area: banner-nosotros;
 }
 
 .footer-nosotros {
-	grid-area: footer-nosotros;
+  grid-area: footer-nosotros;
 }
 
 @media (max-width: 600px) {
-	.body-nosotros {
-		display: grid;
-		grid-template-columns: 1fr;
-		grid-template-rows: auto;
-		width: 100%;
-		max-width: 100%;
-		grid-template-areas: "nav" "contenedor-principal-nosotros" "footer-nosotros";
-		min-height: 100vh;
-	}
-	nav {
-		grid-area: nav;
-		padding: 0 15px;
-	}
-	.contenedor-principal-nosotros {
-		grid-area: contenedor-principal-nosotros;
-		display: grid;
-		grid-template-columns: 1fr;
-		grid-template-rows: auto;
-		padding: 0 15px;
-		grid-template-areas: "intro-nosotros" "carousel-nosotros" "map-burguer-lab" "banner-nosotros";
-	}
-	.contenedor-principal-nosotros .intro-nosotros {
-		grid-area: intro-nosotros;
-	}
-	.contenedor-principal-nosotros .carousel-nosotros {
-		grid-area: carousel-nosotros;
-	}
-	.contenedor-principal-nosotros .map-burguer-lab {
-		grid-area: map-burguer-lab;
-	}
-	.contenedor-principal-nosotros .banner-nosotros {
-		grid-area: banner-nosotros;
-	}
-	.footer-nosotros {
-		grid-area: footer-nosotros;
-	}
+  .body-nosotros {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    width: 100%;
+    max-width: 100%;
+    grid-template-areas: "nav" "contenedor-principal-nosotros" "footer-nosotros";
+    min-height: 100vh;
+  }
+  nav {
+    grid-area: nav;
+    padding: 0 15px;
+  }
+  .contenedor-principal-nosotros {
+    grid-area: contenedor-principal-nosotros;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    padding: 0 15px;
+    grid-template-areas: "intro-nosotros" "carousel-nosotros" "map-burguer-lab" "banner-nosotros";
+  }
+  .contenedor-principal-nosotros .intro-nosotros {
+    grid-area: intro-nosotros;
+  }
+  .contenedor-principal-nosotros .carousel-nosotros {
+    grid-area: carousel-nosotros;
+  }
+  .contenedor-principal-nosotros .map-burguer-lab {
+    grid-area: map-burguer-lab;
+  }
+  .contenedor-principal-nosotros .banner-nosotros {
+    grid-area: banner-nosotros;
+  }
+  .footer-nosotros {
+    grid-area: footer-nosotros;
+  }
 }
 .contenedor-principal-contactanos {
-	background: #0d0d0d;
-	background: linear-gradient(0deg, rgb(13, 13, 13) 0%, rgb(33, 33, 33) 55%);
+  background: #0D0D0D;
+  background: linear-gradient(0deg, rgb(13, 13, 13) 0%, rgb(33, 33, 33) 55%);
 }
 
 .intro-contactanos {
-	font-family: "Alumni Sans SC";
-	color: #f2b705;
-	text-align: center;
-	font-size: xx-large;
+  font-family: "Alumni Sans SC";
+  color: #F2B705;
+  text-align: center;
+  font-size: xx-large;
 }
 .intro-contactanos p {
-	font-family: "Quicksand";
-	color: #d3d2d0;
-	font-size: medium;
-	text-align: center;
-	max-width: 50rem;
-	width: 100%;
-	margin-left: auto;
-	margin-right: auto;
+  font-family: "Quicksand";
+  color: #d3d2d0;
+  font-size: medium;
+  text-align: center;
+  max-width: 50rem;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .footer-contactanos {
-	background-color: black;
-	font-family: "Alumni Sans SC";
-	color: #f2b705;
-	text-align: center;
+  background-color: black;
+  font-family: "Alumni Sans SC";
+  color: #F2B705;
+  text-align: center;
 }
 
 .body-contactanos .whatsapp {
-	position: fixed;
-	width: 60px;
-	height: 60px;
-	bottom: 20px;
-	right: 20px;
-	background-color: #25d366;
-	color: #fff;
-	border-radius: 50%;
-	text-align: center;
-	font-size: 30px;
-	z-index: 100;
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 30px;
+  z-index: 100;
 }
 .body-contactanos .whatsapp-icon {
-	margin-top: 15px;
+  margin-top: 15px;
 }
 
 .formulario {
-	display: flex;
-	justify-content: center;
-	width: 100%;
-	padding: 20px;
-	color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 20px;
+  color: whitesmoke;
 }
 .formulario .form-contacto {
-	display: flex;
-	flex-direction: column;
-	width: 100%;
-	max-width: 600px;
-	gap: 15px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 600px;
+  gap: 15px;
 }
 .formulario .form-contacto .form-campo {
-	display: flex;
-	flex-direction: column;
-	gap: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
-.formulario .form-contacto .form-campo input,
-.formulario .form-contacto .form-campo select,
-.formulario .form-contacto .form-campo textarea {
-	padding: 10px;
-	border-radius: 15px;
-	border: 3px solid black;
-	background-color: rgb(187, 187, 159);
+.formulario .form-contacto .form-campo input, .formulario .form-contacto .form-campo select, .formulario .form-contacto .form-campo textarea {
+  padding: 10px;
+  border-radius: 15px;
+  border: 3px solid black;
+  background-color: rgb(187, 187, 159);
 }
-.formulario .form-contacto .form-campo input:focus,
-.formulario .form-contacto .form-campo select:focus,
-.formulario .form-contacto .form-campo textarea:focus {
-	border-color: #f2b705;
-	outline: none;
-	transition: all 0.3s ease;
-	background-color: black;
-	color: whitesmoke;
+.formulario .form-contacto .form-campo input:focus, .formulario .form-contacto .form-campo select:focus, .formulario .form-contacto .form-campo textarea:focus {
+  border-color: #F2B705;
+  outline: none;
+  transition: all 0.3s ease;
+  background-color: black;
+  color: whitesmoke;
 }
 .formulario .form-contacto .btn-enviar {
-	position: relative;
-	overflow: hidden;
-	padding: 12px 20px;
-	background-color: black;
-	color: #ffffff;
-	border: none;
-	border-radius: 5px;
-	cursor: pointer;
-	z-index: 1;
-	transition: color 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  padding: 12px 20px;
+  background-color: black;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1;
+  transition: color 0.3s ease;
 }
 .formulario .form-contacto .btn-enviar::before {
-	content: "";
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	height: 0%;
-	background-color: #f2b705;
-	transition: height 0.4s ease-in-out;
-	z-index: -1;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background-color: #F2B705;
+  transition: height 0.4s ease-in-out;
+  z-index: -1;
 }
 .formulario .form-contacto .btn-enviar:hover {
-	color: black;
+  color: black;
 }
 .formulario .form-contacto .btn-enviar:hover::before {
-	height: 100%;
+  height: 100%;
 }
 
 .intro-calendario {
-	font-family: "Alumni Sans SC";
-	color: #f2b705;
-	text-align: center;
-	font-size: xx-large;
+  font-family: "Alumni Sans SC";
+  color: #F2B705;
+  text-align: center;
+  font-size: xx-large;
 }
 .intro-calendario p {
-	font-family: "Quicksand";
-	color: #d3d2d0;
-	font-size: medium;
-	text-align: center;
-	max-width: 50rem;
-	width: 100%;
-	margin-left: auto;
-	margin-right: auto;
+  font-family: "Quicksand";
+  color: #d3d2d0;
+  font-size: medium;
+  text-align: center;
+  max-width: 50rem;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .contenedor-principal-calendario {
-	flex: 1;
-	background: #0d0d0d;
-	background: linear-gradient(0deg, rgb(13, 13, 13) 0%, rgb(33, 33, 33) 55%);
+  flex: 1;
+  background: #0D0D0D;
+  background: linear-gradient(0deg, rgb(13, 13, 13) 0%, rgb(33, 33, 33) 55%);
 }
 
 .footer-calendario {
-	background-color: black;
-	font-family: "Alumni Sans SC";
-	color: #f2b705;
-	text-align: center;
+  background-color: black;
+  font-family: "Alumni Sans SC";
+  color: #F2B705;
+  text-align: center;
 }
 
 .body-calendario .whatsapp {
-	position: fixed;
-	width: 60px;
-	height: 60px;
-	bottom: 20px;
-	right: 20px;
-	background-color: #25d366;
-	color: #fff;
-	border-radius: 50%;
-	text-align: center;
-	font-size: 30px;
-	z-index: 100;
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 30px;
+  z-index: 100;
 }
 .body-calendario .whatsapp-icon {
-	margin-top: 15px;
+  margin-top: 15px;
 }
 
 .body-calendario {
-	display: flex;
-	flex-direction: column;
-	min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .card-calendario {
-	background-color: transparent;
-	border-color: transparent;
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	justify-content: center;
-	align-items: center;
-	gap: 30px;
-	padding: 40px 20px;
-	width: 100%;
-	max-width: 1200px;
-	margin: 0 auto;
-	overflow: hidden;
+  background-color: transparent;
+  border-color: transparent;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 40px 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
 }
 .card-calendario .flip-card {
-	background-color: transparent;
-	width: 100%;
-	height: 250px;
-	perspective: 1000px;
+  background-color: transparent;
+  width: 100%;
+  height: 250px;
+  perspective: 1000px;
 }
 .card-calendario .flip-card:hover .flip-card-inner {
-	transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 .card-calendario .flip-card .flip-card-inner {
-	position: relative;
-	width: 100%;
-	height: 100%;
-	text-align: center;
-	transition: transform 0.6s ease;
-	transform-style: preserve-3d;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s ease;
+  transform-style: preserve-3d;
 }
-.card-calendario .flip-card .flip-card-front,
-.card-calendario .flip-card .flip-card-back {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	backface-visibility: hidden;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	border-radius: 12px;
-	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+.card-calendario .flip-card .flip-card-front, .card-calendario .flip-card .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 .card-calendario .flip-card .flip-card-front {
-	background-size: contain; /* Ajusta la imagen para que entre entera */
-	background-repeat: no-repeat; /* Evita que la imagen se repita como mosaico */
-	background-position: center; /* Centra la imagen en la tarjeta */
-	background-color: #111; /* Color de fondo por si queda espacio libre */
-	background-color: black;
-	color: "Quicksand";
-	border: 1px solid #f2b705;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #111;
+  background-color: black;
+  color: "Quicksand";
+  border: 1px solid #F2B705;
 }
 .card-calendario .flip-card .flip-card-back {
-	background-color: #f2b705;
-	color: balck;
-	border-color: black;
-	transform: rotateY(180deg);
+  background-color: #F2B705;
+  color: balck;
+  border-color: black;
+  transform: rotateY(180deg);
 }
 
 @media (max-width: 900px) {
-	.intro-calendario {
-		margin: 0 10px;
-		align-items: center;
-	}
-	.card-calendario {
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-		justify-content: center;
-		gap: 15px;
-		padding: 20px 10px;
-		width: 100%;
-		max-width: 100%;
-		margin: auto;
-		overflow: hidden;
-	}
+  .intro-calendario {
+    margin: 0 10px;
+    align-items: center;
+  }
+  .card-calendario {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    gap: 15px;
+    padding: 20px 10px;
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+  }
 }
 @media (max-width: 600px) {
-	.intro-calendario {
-		margin: 0 10px;
-	}
-	.card-calendario {
-		display: flex;
-		flex-direction: column;
-	}
+  .intro-calendario {
+    margin: 0 10px;
+  }
+  .card-calendario {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
